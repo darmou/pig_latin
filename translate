@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require_relative 'pig_latin'
+@pig = PigLatin.new
+
+if (ARGV.length == 1)
+  puts @pig.translate(ARGV[0])
+else
+  puts "Please provide an English text string to translate ie ./translate.rb 'hello'"
+end
